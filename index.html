@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!--Links-->
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Todo</title>
+</head>
+<body>
+    <h1>To do App</h1>
+
+    <div class="input-wrapper">
+        <label name="textInput">Todo:
+            <input name="textInput" placeholder="Set a todo here..." id="textInput" type="text">
+        </label>
+        <button id="createTodoBtn" onclick="createTodo()">Create Todo</button>
+    </div>
+    <div class="todos-container" id="todoContainer">
+        <!--Created todos go here...-->
+
+    </div>
+
+
+</body>
+</html>
