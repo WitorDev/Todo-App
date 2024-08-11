@@ -2,7 +2,7 @@
 
 <div align="center">
 
-Check it out ``[here](https://witordev.github.io/Todo-App/)``
+Check it out **[here](https://witordev.github.io/Todo-App/)**
 
 ### In need of tracking the things you have to get done?
 
