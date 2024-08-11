@@ -1,0 +1,113 @@
+:root{
+    --main-bg-color: rgb(41,41,41);
+    --main-font-color: rgb(180, 190, 100);
+    --secondary-font-color: rgb(99, 99, 99);
+    --main-accent-color: rgb(190, 133, 100);
+}
+body{
+    margin: 0 auto;
+    padding: 45px;
+
+    height: 100%;
+
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    border: 1px dotted var(--main-font-color);
+    padding: 5px;
+}
+.input-wrapper{
+    padding: 1rem;
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    border: 1px var(--main-font-color) dotted;
+    border-radius: 15px;
+}
+button{
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-font-color);
+    color: var(--main-font-color); 
+    border-radius: 15px;
+    height: 25px;
+    width: 100px;
+}
+button:hover{
+    background-color: var(--main-font-color);
+    border: 1px solid var(--main-bg-color);
+    color: var(--main-bg-color); 
+}
+.todos-container{
+    color: var(--main-font-color); 
+
+    padding: 1rem;
+    margin-top: 3rem;
+
+    min-width: 500px;
+    min-height: 500px;
+    max-height: 500px;
+
+    border: 1px var(--main-font-color) dotted;
+    border-radius: 15px;
+
+    overflow-y: scroll;
+    scroll-snap-type:proximity;
+}
+.todo-item-container{
+    display: flex;
+    align-items: center;
+}
+.todo-item-checkbox{
+    translate: 0px 1.5px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-1px);
+    margin: 0;
+}
+.delete-todo-button{
+    width: 20px;
+    height: 20px;
+
+    margin-left: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-accent-color);
+    border: 1px solid var(--main-bg-color);
+    color: var(--main-bg-color);
+    
+    margin-right: 5px;
+}
+.delete-todo-button i{
+    translate: 0px 0.5px;
+}
+.marked-todo{
+    text-decoration-line: line-through;
+    color: var(--secondary-font-color);
+}
+
+@media all and (max-width: 700px) {
+    .todos-container{
+        min-width: 80vw;
+        padding: 1rem;
+    }
+    .input-wrapper{
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+    }
+}
