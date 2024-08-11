@@ -2,6 +2,11 @@ function createTodo() {
     let textInput = document.getElementById('textInput');
     const todoContainer = document.getElementById('todoContainer');
 
+    if (todoContainer.childElementCount > 8) {
+        todoContainer.style.overflowY = "scroll";
+        todoContainer.style.borderRadius = "0px";
+    }
+
     if(textInput.value == ""){
         alert("Please insert todo name!");
     } else {
@@ -12,7 +17,13 @@ function createTodo() {
 }
 
 function deleteTodo(btnId) {
-    const todoContainer = document.getElementById(btnId).parentElement.remove();
+    document.getElementById(btnId).parentElement.remove();
+
+    if (document.getElementById('todoContainer').childElementCount <= 8) {
+        todoContainer.style.overflowY = "hidden";
+        todoContainer.style.borderRadius = "15px";
+    }
+
 }
 
 function doTodo(todoId) {
@@ -20,4 +31,4 @@ function doTodo(todoId) {
     let todoText = currentMarkedTodo.parentElement.lastChild;
 
     todoText.classList.toggle('marked-todo');
-}  
+}

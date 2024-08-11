@@ -62,7 +62,7 @@ button:hover{
     border: 1px var(--main-font-color) dotted;
     border-radius: 15px;
 
-    overflow-y: scroll;
+    overflow-y: hidden;
     scroll-snap-type:proximity;
 }
 .todo-item-container{
