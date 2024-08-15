@@ -149,7 +149,7 @@ button:hover{
 @media all and (max-width: 700px) {
     .todos-container{
         width: 70vw;
-        height: 40vh;
+        height: 300px;
         padding: 1rem;
     }
     .input-wrapper{
