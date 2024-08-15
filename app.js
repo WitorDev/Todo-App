@@ -15,11 +15,6 @@ function createTodo() {
         } else {
             alert("Please insert todo name!");
         }
-        if(isPortuguese){  
-            alert("Por favor nomeie ao afazer!");
-        } else {
-            alert("Please insert todo name!");
-        }
     } else {
         let currentTodo = todoContainer.childElementCount + 1;
         todoContainer.insertAdjacentHTML("beforeend", `<div class="todo-item-container"><input type="checkbox" onClick="doTodo(this.id)" id="todo-checkbox-${currentTodo}" class="todo-item-checkbox"><button onClick="deleteTodo(this.id)" id="todo-${currentTodo}" class="delete-todo-button"><i class="fa-solid fa-xmark"></i></button><p class="todo-item">${textInput.value}</p></div>`);
@@ -34,7 +29,6 @@ function deleteTodo(btnId) {
         todoContainer.style.overflowY = "hidden";
         todoContainer.style.borderRadius = "15px";
     }
-
 }
 
 function doTodo(todoId) {
@@ -67,10 +61,6 @@ function languageSwitch() {
         languageSwitcher.innerText = "Trocar Idioma";
         document.getElementById("credits").innerText = "Feito por: Witor Tenã"
 
-
         isPortuguese = false;
     }
-
-
-
 }
