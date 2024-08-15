@@ -11,7 +11,7 @@ function createTodo() {
 
     if(textInput.value == ""){
         if(isPortuguese){  
-            alert("Por favor nomeie ao afazer!");
+            alert("Por favor nomeie o afazer!");
         } else {
             alert("Please insert todo name!");
         }
