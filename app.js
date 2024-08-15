@@ -59,7 +59,6 @@ function languageSwitch() {
         `Todo: <input name="textInput" placeholder="Set a todo here..." maxlength="70" id="textInput" type="text">`;
         inputButton.innerText = "Create Todo";
         languageSwitcher.innerText = "Trocar Idioma";
-        document.getElementById("credits").innerText = "Feito por: Witor Tenã"
 
         isPortuguese = false;
     }
