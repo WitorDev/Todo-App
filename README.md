@@ -8,7 +8,7 @@
 
 ``THIS WEBAPP IS FOR YOU!``
 
-A simple Todo App created with HTML CSS and Vanilla Javascript where you can create you todos as well as mark them as done. As soon as you've taken care of your current todo you can simply get rid of it clicking the remove button.
+A simple Todo App created with HTML CSS and Vanilla Javascript where you can create you todos as well as mark them as done. As soon as you've taken care of your current todo you can simply get rid of it by clicking the remove button.
 
 
 
