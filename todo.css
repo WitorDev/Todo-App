@@ -162,7 +162,7 @@ button:hover{
     button{
         height: 60px;
     }
-    button:nth-child(1){
+    .language-switcher-container button{
         display: none;
     }
 }
