@@ -15,6 +15,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    overflow: hidden;
 }
 input{
     background-color: var(--main-bg-color);
@@ -121,6 +123,12 @@ button:hover{
     right: 0;
     top: 0;
 }
+<<<<<<< HEAD
+.language-switcher-container:hover{
+    translate: 0;
+}  
+=======
+>>>>>>> 6202ae2772462816215f0c01b5b6f3a10615f7e3
 .language-switcher-container button{
     width: fit-content;
 }
@@ -140,4 +148,10 @@ button:hover{
     button{
         height: 60px;
     }
+<<<<<<< HEAD
+    button:nth-child(2){
+        display: none;
+    }
+=======
+>>>>>>> 6202ae2772462816215f0c01b5b6f3a10615f7e3
 }
