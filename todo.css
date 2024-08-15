@@ -141,7 +141,7 @@ button:hover{
 }
 .language-switcher-container:hover{
     translate: 0;
-}  
+}
 .language-switcher-container button{
     width: fit-content;
 }
@@ -149,16 +149,13 @@ button:hover{
 @media all and (max-width: 700px) {
     .todos-container{
         width: 70vw;
-        width: 70vw;
+        height: 40vh;
         padding: 1rem;
     }
     .input-wrapper{
         width: 70vw;
-        width: 70vw;
         height: fit-content;
         flex-direction: column;
-
-        text-align: center;
 
         text-align: center;
     }
