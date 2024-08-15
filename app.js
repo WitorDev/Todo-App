@@ -1,7 +1,5 @@
 let isPortuguese = false;
 
-let isPortuguese = false;
-
 function createTodo() {
     let textInput = document.getElementById('textInput');
     const todoContainer = document.getElementById('todoContainer');
