@@ -12,11 +12,16 @@
     <title>Todo</title>
 </head>
 <body>
-    <h1>To do App</h1>
+    <div class="language-switcher-container">
+        <i class="fa-solid fa-language"></i>
+        <button id="languageSwitcher" onclick="languageSwitch()">Translate</button>
+    </div>
+    
+    <h1 id="header-title">To do App</h1>
 
     <div class="input-wrapper">
-        <label name="textInput">Todo:
-            <input name="textInput" placeholder="Set a todo here..." id="textInput" type="text">
+        <label id="input-label" name="textInput">Todo:
+            <input name="textInput" placeholder="Set a todo here..." maxlength="100" id="textInput" type="text">
         </label>
         <button id="createTodoBtn" onclick="createTodo()">Create Todo</button>
     </div>
@@ -24,7 +29,5 @@
         <!--Created todos go here...-->
 
     </div>
-
-
 </body>
 </html>
