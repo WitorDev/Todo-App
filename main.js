@@ -44,7 +44,7 @@ function addTodo(text, done, rendering) {
     }
 
     if (inputText.value == "" && rendering != true) {
-        alert("Insert To-Do Name:");
+        alert("Insert To-Do Name.");
     } else {
         allTodos.push(new Todo(text, done));
         let todoHTML = `
