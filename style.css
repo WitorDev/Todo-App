@@ -1,0 +1,107 @@
+:root{
+    --main-bg-color: rgb(70,70,70);
+    --main-font-color: rgb(255,255,255);
+}
+
+
+body{
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: grid;
+    place-content: center;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form{
+    margin-top: 25%;
+    translate: 30px;
+}
+hr{
+    display: none;
+}
+ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+li{
+    width: 25rem;
+    min-height: 2.5rem;
+    list-style: none;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    border: 1px solid var(--main-font-color);
+    border-radius: 2rem;
+
+    padding: 0px 15px;
+}
+li > button{
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+
+    height: 25px;
+    width: 25px;
+
+    border: 1px solid var(--main-font-color);
+    border-radius: 1rem;
+
+    transition: background .2s;
+}
+
+#todo{
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    border: 1px solid var(--main-font-color);
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 25rem;
+    padding-inline: 1rem;
+}
+#todo:focus{
+    outline: none;
+    caret-color: var(--main-font-color);
+}
+#addTodo{
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    width: 55px;
+    border: 1px solid var(--main-font-color);
+    border-radius: 1rem;
+    translate: -65px;
+    transition: background .2s;
+}
+li > p{
+    word-break: break-all;
+}
+#addTodo:hover{
+    background-color: var(--main-font-color);
+    color: var(--main-bg-color);
+}
+@keyframes colorize {
+    0%{
+        background-color: blue;
+    }
+    50%{
+        background-color: rgb(97, 97, 173);
+    }
+    100%{
+        background-color: rgb(182, 182, 190);
+    }
+}
+@media all and (max-width: 500px){
+    #todo{
+        width: 65vw;
+    }
+}
