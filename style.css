@@ -41,8 +41,7 @@ ul{
     height: 25rem;
     scroll-snap-type: proximity;
     scroll-behavior: smooth;
-}
-ul{
+   
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll;
@@ -59,6 +58,7 @@ li{
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    flex-shrink: 0;
 
     border: 1px solid var(--main-font-color);
     border-radius: 2rem;
@@ -135,6 +135,9 @@ li > p{
 }
 @media all and (max-width: 500px){
     #todo{
+        width: 65vw;
+    }
+    li{
         width: 65vw;
     }
 }
