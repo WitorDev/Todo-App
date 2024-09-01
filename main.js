@@ -41,14 +41,14 @@ function addTodo(text, done, rendering) {
     }
 
     if (inputText.value == "" && rendering != true) {
-        alert("Insert To-Do Name:");
+        alert("Insert To-Do Name.");
     } else {
         allTodos.push(new Todo(text, done));
         let todoHTML = `
             <li id="${allTodos.length}">
                 <input type="checkbox" onchange="checkTodo(this)"${isDone}>
                 <p>${text}</p>
-                <button onclick="deleteTodo(this)">x</button>
+                <button onclick="deleteTodo(this)"><i class="fa fa-trash"></i></button>
             </li>`;
         todoList.insertAdjacentHTML("afterend", todoHTML);
             
@@ -86,4 +86,8 @@ function listStyling() {
     } else {
         list.style.overflowY = "hidden";
     }
+}
+
+function lightMode() {
+    document.querySelector("*").classList.toggle("light-mode");
 }

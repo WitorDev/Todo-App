@@ -2,7 +2,10 @@
     --main-bg-color: rgb(70,70,70);
     --main-font-color: rgb(255,255,255);
 }
-
+.light-mode{
+    --main-bg-color:  rgb(255,255,255);
+    --main-font-color: rgb(70,70,70);
+}
 
 body{
     background-color: var(--main-bg-color);
@@ -19,6 +22,8 @@ body{
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 100vh;
+
+    transition: .5s;
 }
 form{
     translate: 30px -50px;
@@ -72,7 +77,22 @@ li > button{
 
     transition: background .2s;
 }
+#light-mode{
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
 
+    height: 35px;
+    width: 35px;
+
+    border: 1px solid var(--main-font-color);
+    border-radius: 1rem;
+
+    transition: background .2s;
+}
+#light-mode:hover{
+    background-color: var(--main-font-color);
+    color: var(--main-bg-color);
+}
 #todo{
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
