@@ -4,9 +4,6 @@ let form = document.querySelector("form");
 let todoList = document.querySelector("hr");
 let allTodos = [];
 
-// let inputText = document.querySelector("");
-// let inputText = document.querySelector("");
-
 class Todo{
     constructor(text, done){
         this.text = text;
@@ -44,7 +41,7 @@ function addTodo(text, done, rendering) {
     }
 
     if (inputText.value == "" && rendering != true) {
-        alert("Insert To-Do Name.");
+        alert("Insert To-Do Name:");
     } else {
         allTodos.push(new Todo(text, done));
         let todoHTML = `
@@ -56,6 +53,7 @@ function addTodo(text, done, rendering) {
         todoList.insertAdjacentHTML("afterend", todoHTML);
             
         inputText.value = "";
+        listStyling();
     }
 }
 
@@ -77,4 +75,15 @@ function deleteTodo(deleteButton) {
     todo.remove();
 
     localStorage.setItem("todos", JSON.stringify(allTodos));
+    listStyling();
+}
+
+function listStyling() {
+    //styling the app structure.
+    let list = document.querySelector("ul");
+    if (list.childElementCount >= 9) {
+        list.style.overflowY = "scroll";
+    } else {
+        list.style.overflowY = "hidden";
+    }
 }

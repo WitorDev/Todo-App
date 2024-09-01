@@ -12,14 +12,16 @@ body{
     padding: 0;
     box-sizing: border-box;
 
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
 }
 form{
-    margin-top: 25%;
-    translate: 30px;
+    translate: 30px -50px;
 }
 hr{
     display: none;
@@ -27,11 +29,22 @@ hr{
 ul{
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: column;
     gap: 1rem;
+
+    overflow-y: hidden;
+    height: 25rem;
+    scroll-snap-type: proximity;
+    scroll-behavior: smooth;
 }
+ul{
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+  }
+ul::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
 li{
     width: 25rem;
     min-height: 2.5rem;
